@@ -10,7 +10,7 @@ app.get("/post", (req, res) => {
 });
 
 app.get("/post/:slug", (req, res) => {
-    return app.render(req, res, "/post", { slug: req.params.slug })
+    return app.render(req, res, "/pages/post", { slug: req.params.slug })
   });
 
 app.listen(port, () => {
